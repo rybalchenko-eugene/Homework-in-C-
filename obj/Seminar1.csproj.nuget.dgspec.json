@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Reebak\\Documents\\Учеба\\Lesson1 C#\\Seminar1\\Seminar1.csproj": {}
+    "/home/reebak/Документы/Lesson C#/Task_001/Homework-in-C-/Seminar1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Reebak\\Documents\\Учеба\\Lesson1 C#\\Seminar1\\Seminar1.csproj": {
+    "/home/reebak/Документы/Lesson C#/Task_001/Homework-in-C-/Seminar1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reebak\\Documents\\Учеба\\Lesson1 C#\\Seminar1\\Seminar1.csproj",
+        "projectUniqueName": "/home/reebak/Документы/Lesson C#/Task_001/Homework-in-C-/Seminar1.csproj",
         "projectName": "Seminar1",
-        "projectPath": "C:\\Users\\Reebak\\Documents\\Учеба\\Lesson1 C#\\Seminar1\\Seminar1.csproj",
-        "packagesPath": "C:\\Users\\Reebak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reebak\\Documents\\Учеба\\Lesson1 C#\\Seminar1\\obj\\",
+        "projectPath": "/home/reebak/Документы/Lesson C#/Task_001/Homework-in-C-/Seminar1.csproj",
+        "packagesPath": "/home/reebak/.nuget/packages/",
+        "outputPath": "/home/reebak/Документы/Lesson C#/Task_001/Homework-in-C-/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Reebak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/reebak/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -37,6 +37,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -52,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
         }
       }
     }

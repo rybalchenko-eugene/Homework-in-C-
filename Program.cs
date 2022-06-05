@@ -2,7 +2,7 @@
 Console.WriteLine("Hello, World!");
 
 int count = 0;
-float dist = 10000;
+int dist = 10000;
 int speed1 = 1;
 int speed2 = 2;
 int dogspeed = 5;
@@ -23,7 +23,7 @@ while (dist > 10)
     dist = dist - (speed1 + speed2) * time1;
     count += 1;
 }
-Console.WriteLine("Dog will run " + count + " times!");
+Console.WriteLine("Dog will run " + count + " times!\n");
 
 // задача №1
 /* Напишите программу, которая на вход
@@ -59,7 +59,7 @@ else
 вход три числа и выдаёт максимальное из этих чисел.
 */
 
-Console.WriteLine("Задача №2 - Определение максимума из трех чисел.");
+Console.WriteLine("\nЗадача №2 - Определение максимума из трех чисел.");
 Console.WriteLine("Введите целое число №1: ");
 num1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите целое число №2: ");
@@ -88,7 +88,7 @@ else
 принимает число и выдаёт, является ли число чётным
 (делится ли оно на два без остатка). */
 
-Console.WriteLine("Задача №3 - Определение числа на четность");
+Console.WriteLine("\nЗадача №3 - Определение числа на четность");
 Console.WriteLine("Введите целое число: ");
 int num = int.Parse(Console.ReadLine());
 if (num%2 == 0)
@@ -107,7 +107,7 @@ else
 числа от 1 до N.
  */
 
-Console.WriteLine("Задача №4 - Вывод четных чисел до заданного числа");
+Console.WriteLine("\nЗадача №4 - Вывод четных чисел до заданного числа");
 Console.WriteLine("Введите целое положительное число: ");
 num = int.Parse(Console.ReadLine());
 int index = 0;
