@@ -61,7 +61,8 @@ StyleCopReport.xml
 
 # Files built by Visual Studio
 obj/
-Seminar1.csproj
+Seminar1.
+
 *_i.c
 *_p.c
 *_h.h
