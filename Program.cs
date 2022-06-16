@@ -117,3 +117,63 @@ while (index < num)
     index +=2;
 }
 Console.WriteLine("\nКонец! \n");
+
+using System;
+using System.IO;
+
+int[,] pic1 = new int[,]
+{
+{0,1,0,0,0,0,1,1,1,0},
+{0,0,1,0,1,1,0,0,0,1},
+{0,0,0,1,0,0,0,0,0,1},
+{0,0,0,1,0,0,1,1,1,0},
+{0,0,0,1,1,0,1,0,0,0},
+{0,0,1,0,0,0,1,1,1,0},
+{0,1,0,0,0,0,0,0,1,0},
+{1,0,0,0,0,0,1,0,1,1},
+{0,1,0,0,0,0,0,0,0,1},
+{0,0,1,1,1,1,1,1,1,0}};
+
+// input array
+void FillArray(int[,] pict)
+{
+for (int col = 0; col < pict.GetLength(0); col++)
+	{
+	for (int row = 0; row < pict.GetLength(1); row++)
+		{
+        Console.Write(row);
+		pict [col, row] = int.Parse(Console.ReadLine());
+		}
+	Console.WriteLine("Новая строка " + (col+1));
+    }
+}
+
+
+void PrintArray(int[,] pict)
+{
+    for (int col = 0; col < pict.GetLength(0); col++)
+    {
+	    for (int row = 0; row < pict.GetLength(1); row++)
+	    {
+			if (pict [col, row] == 0) Console.Write(" ");
+			else Console.Write("+");
+        }
+	Console.WriteLine();
+    }
+}
+
+PrintArray(pic1);
+void Fill(int row, int col)
+{
+	if (pic1[row, col] == 0)
+	{
+		pic1 [row, col] = 1;
+		Fill(row+1, col);
+		Fill(row, col+1);
+		Fill(row-1, col);
+		Fill(row, col-1);
+	}
+}
+Fill (3,4);
+PrintArray(pic1);
+	
